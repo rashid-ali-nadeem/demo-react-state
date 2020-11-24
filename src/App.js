@@ -1,24 +1,17 @@
-import logo from './logo.svg';
+import React ,{ useState } from 'react';
 import './App.css';
+import Counter from './Counter';
 
 function App() {
+  let [isDay, setDay] = useState(false);
+  let [count, setCount] = useState(0); 
+  const today = isDay ? 'dayShine' : 'darkNight';
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <div className = {'box ${today}'}>
+  <h3>This is {isDay? "Day": "Night"}</h3>
+  <button onClick = {() => setDay(!isDay)} >Change</button>
+  <Counter counter = {count} setcount = {setCount}/>
+  </div>
   );
 }
 
