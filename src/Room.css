@@ -1,0 +1,13 @@
+.room {
+    height: 100%;
+}
+.light {
+    background-color: wheat;
+}
+.dark {
+    background-color: black;
+    color: wheat;
+}
+.button {
+    margin-left: 5px;
+}

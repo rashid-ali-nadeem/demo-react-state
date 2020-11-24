@@ -1,15 +1,17 @@
 import React ,{ useState } from 'react';
-import './App.css';
-import Counter from './Counter';
+import Room from './Room.js';
+import RoomTemp from './RoomTemp.js';
+import Counter from './Counter.js';
+
 
 function App() {
-  let [isDay, setDay] = useState(false);
   let [count, setCount] = useState(0); 
-  const today = isDay ? 'dayShine' : 'darkNight';
+  
+
   return (
-    <div className = {'box ${today}'}>
-  <h3>This is {isDay? "Day": "Night"}</h3>
-  <button onClick = {() => setDay(!isDay)} >Change</button>
+    <div >
+  <Room/>
+  <RoomTemp/>
   <Counter counter = {count} setcount = {setCount}/>
   </div>
   );

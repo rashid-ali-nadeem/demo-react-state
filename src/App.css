@@ -1,12 +1,3 @@
 .box {
   height: 100vh;
 }
-
-.dayShine {
-  background-color: yellow;
-}
-
-.darkNight {
-  background-color: black;
-  color: white;
-}
