@@ -9,10 +9,10 @@ function App() {
   
 
   return (
-    <div >
-  <Room/>
-  <RoomTemp/>
-  <Counter counter = {count} setcount = {setCount}/>
+    <div className = 'App'>
+      <Room/>
+      <RoomTemp/>
+      <Counter counter = {count} setcount = {setCount}/>
   </div>
   );
 }
