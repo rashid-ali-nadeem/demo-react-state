@@ -11,6 +11,7 @@ function Counter ({counter,setcount}){
                 <button className = 'button' onClick = {()=> setcount(--counter)}>Decrease Value</button>
             </header>
         </div>
+        
         );
 }
 export default Counter;
